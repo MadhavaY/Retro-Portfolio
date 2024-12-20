@@ -1,0 +1,73 @@
+
+.navbar{
+    display: flex;
+    margin: auto;
+    max-width: 32rem;
+    column-gap: .75rem;
+    box-sizing: border-box;
+}
+
+.navbar-list{
+    display: flex;
+    margin: auto;
+}
+
+.navbar-list ul li{
+      list-style-type: none;
+      display: inline-block;
+      margin: 0 10px;
+      
+      
+}
+
+/* .navbar-list ul li:hover{
+    font-weight: bold;
+    cursor: pointer;    
+} */
+
+.navbar-list ul a{
+   text-decoration: none;
+   opacity: .5;
+   text-decoration: none;
+   color: inherit;
+   transition: opacity .25s;
+   color: white;
+   position: relative;
+   text-transform: uppercase;
+   transition: --txt .4s;
+   transition-timing-function: linear;
+   counter-set: txt var(--txt);
+}
+
+.navbar-list ul li a:hover {color: transparent;}
+  
+.navbar-list > ul > li:hover a {opacity: 1;}
+
+.navbar-list ul li a::before {
+  content: counter(txt, lower-alpha);
+  position: absolute;
+  color: transparent;
+}
+
+.navbar-list ul li a:hover::before {color: white;}
+
+.navbar-list ul li:hover .believe {--txt: 132812;}
+.navbar-list ul li:hover .learn {--txt: 027579;}
+.navbar-list ul li:hover .dream {--txt: 783109652;}
+.navbar-list ul li:hover .connect {--txt: 1111615174;}
+
+@property --txt {
+    syntax: "<integer>";
+    initial-value: 2147483647;
+    inherits: false;
+}
+
+
+@media only screen and (max-width:870px) {
+    .navbar{
+        padding: 2rem;
+        position: absolute;
+        top: 45rem;
+        
+    }
+}
