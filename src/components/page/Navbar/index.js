@@ -12,11 +12,11 @@ function Navbar() {
               [Home]
             </Link>
           </li>
-          <li>
+          {/* <li>
             <Link to="/about" className="learn">
               [About]
             </Link>
-          </li>
+          </li> */}
           <li>
             <Link to="/projects" className="dream">[Projects]</Link>
           </li>

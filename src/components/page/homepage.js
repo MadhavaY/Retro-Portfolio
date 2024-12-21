@@ -1,17 +1,18 @@
 import React from "react";
 import "./homepage.scss";
+import photo2 from "./photo 2.jpg"
 
 function Homepage() {
   return (
     <div className="homepage">
       <section className="home-section">
-
-
         <section className="main-header">
           <h1>
-            <span className="name-heading">Madhava Yedla</span> 
+            <span className="name-heading">Madhava Yedla</span>
           </h1>
         </section>
+
+        {/* <img src={photo2}></img> */}
 
         <section className="information">
           {" "}
@@ -20,12 +21,26 @@ function Homepage() {
           in developing smart systems while making sure they're usable at the
           same time. I just love combining technical problem-solving with the
           creativity of designing interfaces with strong knowledge in algorithms
-          and programming. I look forward to creating new applications, using
-          those skills to push beyond what is possible in both AI and web
-          development.{" "}
+          and programming. {" "}
+        </section>
+        <br />
+
+        <section className="information">
+          {" "}
+          I’m all about machine learning because it’s the only field where
+          overthinking is called feature engineering. I also create my own
+          websites and nothing sparks joy quite like fixing a div that refuses
+          to center, except maybe convincing myself the bug was a feature. I use
+          Pytorch for my ML projects and React for the front-end tasks.{" "}
         </section>
 
-        
+        <br />
+
+        <section className="information">
+          {" "}
+          Because I have a lot free time, I totally love touch typing, reading
+          books, talking tech, space and science and I enjoy watching movies.{" "}
+        </section>
       </section>
     </div>
   );

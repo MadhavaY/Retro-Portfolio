@@ -4,18 +4,19 @@ import RQG from "./images/RQG.png";
 import portfolio from "./images/portfolio.png";
 import BTD2 from "./images/BTD 2.png";
 import tictactoe from "./images/tictactoe.png";
+import architecture from './images/architecture.png'
 
 const Projects = () => {
   // List of projects and their corresponding image paths
   const projects = [
     {
       name: "Brain Tumor Detection",
-      image: BTD2,
+      image: architecture,
       link: ""
     },
     {
       name: "Synthetic Data with GANs",
-      image: RQG,
+      image: BTD2,
       link: "https://github.com/MadhavaY/TumorCycleGan"
     },
     { name: "Movie Recommendation system", 
@@ -36,7 +37,7 @@ const Projects = () => {
     },
 
     { name: "Random Quotes Generator", 
-      image: tictactoe,
+      image: RQG,
       link: "https://infinitequote.netlify.app/"
     },
   ];
