@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import React, { useState,useRef } from "react";
 import "./projects.css";
 import RQG from "./images/RQG.png";
 import portfolio from "./images/portfolio.png";
 import BTD2 from "./images/BTD 2.png";
 import tictactoe from "./images/tictactoe.png";
 import architecture from './images/architecture.png'
+import AnimatedText from "../AnimatedText";
 
 const Projects = () => {
   // List of projects and their corresponding image paths
@@ -52,10 +53,12 @@ const Projects = () => {
     setHoveredProject(null);
   };
 
+  const project_headerRef = useRef(null);
   return (
+
     <div>
       <section className="projects-section">
-        <section className="header3">Projects</section>
+        <AnimatedText className="header3" textToAnimate="Projects" ref={project_headerRef}></AnimatedText>
         <section className="projects-list">
           <ul>
             {projects.map((project, index) => (

@@ -1,11 +1,13 @@
-import React from "react";
+import React,{useRef} from "react";
 import './connect.css'
+import AnimatedText from "../AnimatedText";
 
 function Connect() {
+  const connect_headerRef = useRef(null);
   return (
     <div className="connect">
       <section className="connect-section">
-            <section className="header4">Connect</section>
+            <AnimatedText className="header4" textToAnimate="Connect" ref={connect_headerRef}></AnimatedText>
 
             <section className="connect-list">
             <ul>

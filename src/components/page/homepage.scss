@@ -12,12 +12,13 @@ $Font: "Press Start 2P", cursive;
 }
 
 .main-header{
-    color: black;
+    color: rgb(255, 255, 255);
+    font-family: $Font;
 }
 
 .name-heading{
    color: rgb(247, 247, 247);
-   font-family: $Font;
+   
 }
 
 .name-heading:hover{

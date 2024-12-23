@@ -1,11 +1,13 @@
-import React from "react";
+import React,{useRef} from "react";
 import "./about-style.css";
+import AnimatedText from "../AnimatedText";
 
 function About() {
+  const about_headerRef = useRef(null);
   return (
     <div className="intro">
       <section className="about-section">
-        <section className="header2">About</section>
+          <AnimatedText className="header2" textToAnimate= "About" ref={about_headerRef}></AnimatedText>
         <section className="">
           {" "}
 

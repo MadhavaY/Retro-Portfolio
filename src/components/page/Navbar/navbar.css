@@ -2,7 +2,7 @@
 .navbar{
     display: flex;
     margin: auto;
-    max-width: 32rem;
+    max-width: 40rem;
     column-gap: .75rem;
     box-sizing: border-box;
 }
@@ -16,16 +16,30 @@
       list-style-type: none;
       display: inline-block;
       margin: 0 10px;
+      padding: 1rem;
       
       
 }
+
+
+.navbar-list ul a{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+
+/* .navbar-list ul a:hover{
+    background-color: white;
+    color: black;
+    padding: 0.2rem;
+} */
 
 /* .navbar-list ul li:hover{
     font-weight: bold;
     cursor: pointer;    
 } */
 
-.navbar-list ul a{
+/* .navbar-list ul a{
    text-decoration: none;
    opacity: .5;
    text-decoration: none;
@@ -39,7 +53,11 @@
    counter-set: txt var(--txt);
 }
 
-.navbar-list ul li a:hover {color: transparent;}
+.navbar-list ul li a:hover {
+    color: transparent;
+    background-color: rgb(255, 255, 255);
+    color:black ;
+}
   
 .navbar-list > ul > li:hover a {opacity: 1;}
 
@@ -60,7 +78,7 @@
     syntax: "<integer>";
     initial-value: 2147483647;
     inherits: false;
-}
+}*/
 
 
 @media only screen and (max-width:870px) {
@@ -70,4 +88,4 @@
         top: 45rem;
         
     }
-}
+} 

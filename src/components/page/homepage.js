@@ -1,15 +1,17 @@
-import React from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "./homepage.scss";
-import photo2 from "./photo 2.jpg"
-
+import photo2 from "./photo 2.jpg";
+import AnimatedText from "./AnimatedText";
 function Homepage() {
+  const name_headerRef = useRef(null); 
   return (
     <div className="homepage">
       <section className="home-section">
         <section className="main-header">
-          <h1>
+          {/* <h1>
             <span className="name-heading">Madhava Yedla</span>
-          </h1>
+          </h1> */}
+          <AnimatedText className='name-heading' textToAnimate="Madhava Yedla" ref={name_headerRef}/>
         </section>
 
         {/* <img src={photo2}></img> */}
