@@ -1,81 +1,83 @@
-
 @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 
 $Font: "Press Start 2P", cursive;
 
-.homepage{
-    display: flex;
-    margin: auto;
-    align-items: center;
-    max-width: 32rem;
-    /* border: 1px solid pink; */
+.homepage {
+  display: flex;
+  margin: auto;
+  align-items: center;
+  max-width: 32rem;
+  // border: 1px solid pink; 
+  color: #6E1E90;
 }
 
-.main-header{
-    color: rgb(255, 255, 255);
-    font-family: $Font;
+.main-header {
+  color: rgb(255, 255, 255);
+  font-family: $Font;
+  padding: 1rem 1rem 1rem 0;
+  color: #6E1E90;
+
 }
 
-.name-heading{
-   color: rgb(247, 247, 247);
-   
-}
-
-.name-heading:hover{
-    /* transition: ; */
-    
-}
-
-.information{
-    color: white;
+.name-heading {
+  color: rgb(247, 247, 247);
+  color: #6E1E90;
+  color: #FAD4C0;
+  // color: #00FFFF;
+  font-size: 1.5rem;
 }
 
 img{
-    width: 8rem;
-    // height: 12rem;
-    // padding: 1rem;
+  
+  width: 10rem;
+  border-radius: 10px;
 }
 
-@media only screen and (max-width:870px) {
+
+.information {
+  color: white;
+  padding: 1rem 1rem 1rem 0;
+  color: #7c7b7b;
+  color: #B3A7C7;
+  color: #C97B84;
+  color: #D8BFD8;
+  // color: #A0A0A0;
+}
 
 
-    .main-header{
-        padding:1rem;
-        /* margin: auto;
+@media only screen and (max-width: 870px) {
+  .main-header {
+    padding: 1rem;
+    /* margin: auto;
         display: flex;
         align-items: center;
         flex-direction: column; */
-        width: 12rem;   
-    
-    }
+    width: 12rem;
+  }
 
-    .name-heading{
-        /* font-weight: 200; */
-        font-size: 3rem;
-    }
+  .name-heading {
+    /* font-weight: 200; */
+    font-size: 3rem;
+  }
 
-    .information{
-        font-size: 1rem;
-        /* border: 1px solid white; */
-        padding: 1rem;
-        font-size: 1rem;
-        line-height: none;
+  .information {
+    font-size: 1rem;
+    /* border: 1px solid white; */
+    padding: 1rem;
+    font-size: 1rem;
+    line-height: none;
+  }
 
-    }
-    
-    .text{
-        font-size: 1rem;
- 
-    }
+  .text {
+    font-size: 1rem;
+  }
 
-
-    .intro{
-        margin: auto;
-        display: flex;
-        align-items: center;
-        float:none;
-        margin-top: 2rem;
-        width: 20rem;
-    }
-    
+  .intro {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    float: none;
+    margin-top: 2rem;
+    width: 20rem;
+  }
 }

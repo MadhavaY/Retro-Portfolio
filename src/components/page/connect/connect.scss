@@ -1,4 +1,7 @@
 
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+$Font: "Press Start 2P", cursive;
 
 .connect{
     display: flex;
@@ -10,7 +13,9 @@
 
 .header4{
     color: #ffffff;
-    font-size: 2rem;
+    color: #FAD4C0;
+    font-family: $Font;
+    font-size: 1.5rem;
 }
 
 .connect-list ul{
@@ -25,9 +30,11 @@
 .connect-list ul a{
    text-decoration: none;
    color: #ffffff;
+   color: #D8BFD8;
 }
 
 
 .connect-list ul a:hover{
     font-weight: bold;
+    color: #CA82E8;
 }

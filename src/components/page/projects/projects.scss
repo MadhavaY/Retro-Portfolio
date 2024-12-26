@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+$Font: "Press Start 2P", cursive;
+
 .projects-section {
   padding: 1.5rem 0 0 3rem;
   width: 30rem;
@@ -5,12 +9,19 @@
 
 .header3 {
   color: #ffffff;
-  font-size: 2rem;
+  color: #FAD4C0;
+  font-family: $Font;
+  font-size: 1.5rem;
 }
 
 .project-link{
   text-decoration: none;
   color: #ffffff;
+  color: #D8BFD8;
+}
+
+.project-link:hover{
+  color: #CA82E8;
 }
 
 .projects-list ul {

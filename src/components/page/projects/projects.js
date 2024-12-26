@@ -1,11 +1,12 @@
-import React, { useState,useRef } from "react";
-import "./projects.css";
+import React, { useState, useRef } from "react";
+import "./projects.scss";
 import RQG from "./images/RQG.png";
 import portfolio from "./images/portfolio.png";
 import BTD2 from "./images/BTD 2.png";
 import tictactoe from "./images/tictactoe.png";
-import architecture from './images/architecture.png'
+import architecture from "./images/architecture.png";
 import AnimatedText from "../AnimatedText";
+import { motion } from "framer-motion";
 
 const Projects = () => {
   // List of projects and their corresponding image paths
@@ -13,33 +14,31 @@ const Projects = () => {
     {
       name: "Brain Tumor Detection",
       image: architecture,
-      link: ""
+      link: "",
     },
     {
       name: "Synthetic Data with GANs",
       image: BTD2,
-      link: "https://github.com/MadhavaY/TumorCycleGan"
+      link: "https://github.com/MadhavaY/TumorCycleGan",
     },
-    { name: "Movie Recommendation system", 
-      image: "",
-      link: ""
-    
-    },
+    { name: "Movie Recommendation system", image: "", link: "" },
 
-    { name: "Portfolio", 
+    {
+      name: "Portfolio",
       image: portfolio,
-      link: "https://madhavaportfolio.vercel.app/"
-    
+      link: "https://madhavaportfolio.vercel.app/",
     },
 
-    { name: "TicTacToe", 
+    {
+      name: "TicTacToe",
       image: tictactoe,
-      link: "https://tictactoe-madhavay.vercel.app/"
+      link: "https://tictactoe-madhavay.vercel.app/",
     },
 
-    { name: "Random Quotes Generator", 
+    {
+      name: "Random Quotes Generator",
       image: RQG,
-      link: "https://infinitequote.netlify.app/"
+      link: "https://infinitequote.netlify.app/",
     },
   ];
 
@@ -55,39 +54,53 @@ const Projects = () => {
 
   const project_headerRef = useRef(null);
   return (
-
     <div>
       <section className="projects-section">
-        <AnimatedText className="header3" textToAnimate="Projects" ref={project_headerRef}></AnimatedText>
+        <motion.section
+          initial={{ opacity: 0, x: -100 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.5, ease: "easeInOut" }}
+        >
+          <AnimatedText
+            className="header3"
+            textToAnimate="Projects"
+            ref={project_headerRef}
+          ></AnimatedText>
+        </motion.section>
         <section className="projects-list">
           <ul>
             {projects.map((project, index) => (
-              <li
+              <motion.li
+                initial={{ opacity: 0, x: -100 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.5, ease: "easeInOut" }}
                 key={index}
                 onMouseEnter={() => handleMouseEnter(project)}
                 onMouseLeave={handleMouseLeave}
               >
-                <a className="project-link" href={project.link} target="_blank" rel="noopener noreferrer">
-                {project.name}
+                <a
+                  className="project-link"
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {project.name}
                 </a>
-              </li>
+              </motion.li>
             ))}
           </ul>
         </section>
       </section>
 
-      {/* Display the image when a project name is hovered */}
       {hoveredProject && (
-        <div
-          className="project-images-div"
-        >
+        <div className="project-images-div">
           <img
             className="project-image"
             src={hoveredProject.image}
             alt={hoveredProject.name}
             style={{
               opacity: hoveredProject ? 1 : 0,
-              transition: 'opacity 1s ease-in-out',
+              transition: "opacity 1s ease-in-out",
             }}
 
             // style={{ width: "300px", height: "200px" }}

@@ -1,10 +1,10 @@
-import React , { useRef } from "react";
+import React, { useRef } from "react";
 import "./navbar.css";
 import { Link } from "react-router-dom";
 import AnimatedText from "../AnimatedText";
+import { motion } from "framer-motion";
 
 function Navbar() {
-
   const homeRef = useRef(null);
   const aboutRef = useRef(null);
   const projectRef = useRef(null);
@@ -13,39 +13,62 @@ function Navbar() {
     <div className="navbar">
       <section className="navbar-list">
         <ul>
-          <li>
-            {/* <Link to="/about" style={{ display: "inline-block" }}>
-              <AnimatedText textToAnimate="Go to About" ref={aboutRef} />{" "}
-              
-            </Link> */}
-
+          <motion.li
+            initial={{ opacity: 0, x: -100 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5, ease: "easeInOut" }}
+          >
             <Link to="/" className="believe">
               <span>
-                <AnimatedText textToAnimate="[Home]" ref={homeRef}></AnimatedText>
+                <AnimatedText
+                  textToAnimate="[Home]"
+                  ref={homeRef}
+                ></AnimatedText>
               </span>
             </Link>
-          </li>
-          <li>
+          </motion.li>
+          {/* <motion.li
+            initial={{ opacity: 0, x: -100 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5, ease: "easeInOut" }}
+          >
             <Link to="/about" className="learn">
               <span>
-                <AnimatedText textToAnimate="[About]" ref={aboutRef}></AnimatedText>
+                <AnimatedText
+                  textToAnimate="[About]"
+                  ref={aboutRef}
+                ></AnimatedText>
               </span>
             </Link>
-          </li>
-          <li>
+          </motion.li> */}
+          <motion.li
+            initial={{ opacity: 0, x: -100 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5, ease: "easeInOut" }}
+          >
             <Link to="/projects" className="dream">
               <span>
-                <AnimatedText textToAnimate="[Projects]" ref={projectRef}></AnimatedText>
+                <AnimatedText
+                  textToAnimate="[Projects]"
+                  ref={projectRef}
+                ></AnimatedText>
               </span>
             </Link>
-          </li>
-          <li>
+          </motion.li>
+          <motion.li
+            initial={{ opacity: 0, x: -100 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5, ease: "easeInOut" }}
+          >
             <Link to="/connect" className="connect">
               <span>
-                <AnimatedText textToAnimate="[Connect]" ref={connectRef}></AnimatedText>
+                <AnimatedText
+                  textToAnimate="[Connect]"
+                  ref={connectRef}
+                ></AnimatedText>
               </span>
             </Link>
-          </li>
+          </motion.li>
         </ul>
       </section>
     </div>
