@@ -5,8 +5,11 @@ import portfolio from "./images/portfolio.png";
 import BTD2 from "./images/BTD 2.png";
 import tictactoe from "./images/tictactoe.png";
 import architecture from "./images/architecture.png";
+import f1 from './images/f1.png';
+import f11 from './images/ff1.png'
 import AnimatedText from "../AnimatedText";
 import { motion } from "framer-motion";
+
 
 const Projects = () => {
   // List of projects and their corresponding image paths
@@ -21,7 +24,9 @@ const Projects = () => {
       image: BTD2,
       link: "https://github.com/MadhavaY/TumorCycleGan",
     },
-    { name: "Movie Recommendation system", image: "", link: "" },
+    { name: "F1 Lap Time Prediction", 
+      image: f1, 
+      link: "https://github.com/MadhavaY/F1LapTimePrediction" },
 
     {
       name: "Portfolio",
