@@ -27,34 +27,7 @@ function Navbar() {
               </span>
             </Link>
           </motion.li>
-          {/* <motion.li
-            initial={{ opacity: 0, x: -100 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5, ease: "easeInOut" }}
-          >
-            <Link to="/about" className="learn">
-              <span>
-                <AnimatedText
-                  textToAnimate="[About]"
-                  ref={aboutRef}
-                ></AnimatedText>
-              </span>
-            </Link>
-          </motion.li> */}
-          <motion.li
-            initial={{ opacity: 0, x: -100 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5, ease: "easeInOut" }}
-          >
-            <Link to="/projects" className="dream">
-              <span>
-                <AnimatedText
-                  textToAnimate="[Projects]"
-                  ref={projectRef}
-                ></AnimatedText>
-              </span>
-            </Link>
-          </motion.li>
+
           <motion.li
             initial={{ opacity: 0, x: -100 }}
             animate={{ opacity: 1, x: 0 }}
@@ -65,6 +38,21 @@ function Navbar() {
                 <AnimatedText
                   textToAnimate="[Connect]"
                   ref={connectRef}
+                ></AnimatedText>
+              </span>
+            </Link>
+          </motion.li>
+
+          <motion.li
+            initial={{ opacity: 0, x: -100 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5, ease: "easeInOut" }}
+          >
+            <Link to="/projects" className="dream">
+              <span>
+                <AnimatedText
+                  textToAnimate="[Projects]"
+                  ref={projectRef}
                 ></AnimatedText>
               </span>
             </Link>

@@ -7,11 +7,6 @@
     box-sizing: border-box;
 }
 
-.navbar-list{
-    display: flex;
-    margin: auto;
-}
-
 .navbar-list ul li{
       list-style-type: none;
       display: inline-block;
