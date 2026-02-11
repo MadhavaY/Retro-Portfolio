@@ -1,4 +1,9 @@
 
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+$Font: "Press Start 2P", cursive;
+
+
 .navbar{
     display: flex;
     margin: auto;
@@ -17,9 +22,10 @@
 
 
 .navbar-list ul a{
+    font-family: $Font;
     text-decoration: none;
     color: white;
-    font-size: 1rem;
+    font-size: 0.8rem;
     color: #6E1E90;
     color: #D8BFD8;
 }

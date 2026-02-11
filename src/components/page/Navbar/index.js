@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import "./navbar.css";
+import "./navbar.scss";
 import { Link } from "react-router-dom";
 import AnimatedText from "../AnimatedText";
 import { motion } from "framer-motion";

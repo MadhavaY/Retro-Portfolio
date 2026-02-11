@@ -22,9 +22,13 @@ $Font: "Press Start 2P", cursive;
 .connect-list ul{
     padding:0;
     margin: 0;
+    margin-top: 1rem;
 }
 .connect-list ul li{
+      
       list-style-type: none;
+      line-height: 1.5;
+      font-size: 1.2rem;
       
 }
 

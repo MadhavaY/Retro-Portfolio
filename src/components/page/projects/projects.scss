@@ -28,6 +28,7 @@ $Font: "Press Start 2P", cursive;
   padding: 0;
   margin: 0;
   text-decoration: none;
+  margin-top: 1rem;
   /* color: black; */
 }
 .projects-list ul li {
@@ -36,6 +37,8 @@ $Font: "Press Start 2P", cursive;
   padding: 0;
   margin: 0;
   text-decoration: none;
+  line-height: 1.5;
+  font-size: 1.2rem;
   /* color: black; */
 }
 
@@ -51,9 +54,9 @@ $Font: "Press Start 2P", cursive;
 
 .project-image{
     width: 60rem;
-    height: 30rem;
+    height: 35rem;
     margin-left: 26rem;
-    margin-top: -11rem;
+    margin-top: -19rem;
     /* opacity: hoveredProject ? 1 : 0,;
     transition: 'opacity 0.5s ease-in-out'; */
     

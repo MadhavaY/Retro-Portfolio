@@ -5,15 +5,22 @@ import portfolio from "./images/portfolio.png";
 import BTD2 from "./images/BTD 2.png";
 import tictactoe from "./images/tictactoe.png";
 import architecture from "./images/architecture.png";
-import f1 from './images/f1.png';
-import f11 from './images/ff1.png'
+import sentiment from "./images/senitment.png"
+import f1 from "./images/f1.png";
+import f11 from "./images/ff1.png";
+import retail from "./images/Retail Shop.png"
+import hotel from "./images/Hotel Revenue.png"
 import AnimatedText from "../AnimatedText";
 import { motion } from "framer-motion";
-
 
 const Projects = () => {
   // List of projects and their corresponding image paths
   const projects = [
+    {
+      name: "Sentiment Span Extraction ",
+      image: sentiment,
+      link: "https://github.com/MadhavaY/sentiment-span-extraction",
+    },
     {
       name: "Brain Tumor Detection",
       image: architecture,
@@ -24,9 +31,21 @@ const Projects = () => {
       image: BTD2,
       link: "https://github.com/MadhavaY/TumorCycleGan",
     },
-    { name: "F1 Lap Time Prediction", 
-      image: f1, 
-      link: "https://github.com/MadhavaY/F1LapTimePrediction" },
+    {
+      name: "Retail Shop Dashboard (PBI)",
+      image: retail,
+      link: "",
+    },
+    {
+      name: "Hotel Revenue Dashboard (PBI)",
+      image: hotel,
+      link: "/",
+    },
+    {
+      name: "F1 Lap Time Prediction",
+      image: f1,
+      link: "https://github.com/MadhavaY/F1LapTimePrediction",
+    },
 
     {
       name: "Portfolio",

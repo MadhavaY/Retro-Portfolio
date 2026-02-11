@@ -32,11 +32,12 @@ function Homepage() {
           <section className="information">
             {" "}
             A Computer Science graduate student with interests in Machine
-            Learning and front-end development. School has really helped build
-            my interest in developing smart systems while making sure they're
-            usable at the same time. I just love combining technical
-            problem-solving with the creativity of designing interfaces with
-            strong knowledge in algorithms and programming.{" "}
+            Learning and front-end development.
+            {/* School has really helped build my interest in developing smart systems while making sure they're
+            usable at the same time. */}
+            {" "}I just love combining technical problem-solving with the creativity
+             of designing interfaces {/* with strong knowledge in algorithms and
+            programming.{" "} */}
           </section>
 
           <section className="information">
