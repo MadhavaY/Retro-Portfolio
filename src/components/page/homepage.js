@@ -27,7 +27,7 @@ function Homepage() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: "easeInOut" }}
         >
-          <img src={lewis} alt="cool photo you missed"></img>
+          <img src={lewis} alt="LH"></img>
           <section className="information">
             {" "}
             A Computer Science graduate student with interests in Machine
