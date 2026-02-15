@@ -6,6 +6,9 @@ const AnimatedText = forwardRef(({ textToAnimate, as = 'span', className }, ref)
   const intervalRef = useRef(null);
 
   useEffect(() => {
+    const element = ref?.current;
+    if (!element) return;
+
     let animationFrameId;
 
     const animateText = () => {
@@ -35,25 +38,18 @@ const AnimatedText = forwardRef(({ textToAnimate, as = 'span', className }, ref)
     };
 
 
-    if (ref.current) {
-        // Use requestAnimationFrame to ensure the element is rendered
         animationFrameId = requestAnimationFrame(() => {
-            if (ref.current) { // Double check inside the animation frame callback
                 animateText();
-                ref.current.addEventListener('mouseover', handleMouseOver);
-            }
+                element.addEventListener('mouseover', handleMouseOver);
         });
-    }
 
 
     return () => {
         clearInterval(intervalRef.current);
-        if(ref.current){
-            ref.current.removeEventListener('mouseover', handleMouseOver);
-        }
+        element.removeEventListener("mouseover",handleMouseOver)
         cancelAnimationFrame(animationFrameId);
     };
-  }, [textToAnimate]);
+  }, [textToAnimate, ref]);
 
   const Element = as;
 

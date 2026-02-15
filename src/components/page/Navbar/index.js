@@ -6,7 +6,6 @@ import { motion } from "framer-motion";
 
 function Navbar() {
   const homeRef = useRef(null);
-  const aboutRef = useRef(null);
   const projectRef = useRef(null);
   const connectRef = useRef(null);
   return (

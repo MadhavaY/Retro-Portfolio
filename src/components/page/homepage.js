@@ -1,6 +1,5 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useRef } from "react";
 import "./homepage.scss";
-import photo2 from "./photo 2.jpg";
 import lewis from "./lewis.jpg";
 import AnimatedText from "./AnimatedText";
 import { motion } from "framer-motion";
@@ -62,9 +61,3 @@ function Homepage() {
 
 export default Homepage;
 
-{
-  /* <span>
-          <span className="text">I build things for the web and </span>
-          <span className="text">develop solutions using Machine learning</span>
-        </span> */
-}

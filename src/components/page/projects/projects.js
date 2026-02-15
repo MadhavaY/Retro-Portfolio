@@ -7,7 +7,6 @@ import tictactoe from "./images/tictactoe.png";
 import architecture from "./images/architecture.png";
 import sentiment from "./images/senitment.png"
 import f1 from "./images/f1.png";
-import f11 from "./images/ff1.png";
 import retail from "./images/Retail Shop.png"
 import hotel from "./images/Hotel Revenue.png"
 import AnimatedText from "../AnimatedText";
