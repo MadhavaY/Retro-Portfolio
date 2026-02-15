@@ -32,19 +32,20 @@ function Connect() {
               <a
                 href="https://github.com/MadhavaY?tab=overview&from=2024-10-01&to=2024-10-15"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 Github
               </a>{" "}
             </li>
             <li>
               {" "}
-              <a href="https://www.linkedin.com/in/madhava-y/" target="_blank">
+              <a href="https://www.linkedin.com/in/madhava-y/" target="_blank" rel="noopener noreferrer">
                 LinkedIn
               </a>
             </li>
             <li>
               {" "}
-              <a href="mailto:madhavayedla@gmail.com" target="_blank">
+              <a href="mailto:madhavayedla@gmail.com" target="_blank" rel="noopener noreferrer">
                 Email
               </a>{" "}
             </li>
@@ -53,6 +54,7 @@ function Connect() {
               <a
                 href="https://www.instagram.com/madhava.yedla/"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 Instagram
               </a>
@@ -62,6 +64,7 @@ function Connect() {
               <a
                 href="https://drive.google.com/file/d/1ISw797FlN30-DqPzFjwCedAnTJbGZjRU/view?usp=sharing"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 CV
               </a>
